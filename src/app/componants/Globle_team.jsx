@@ -26,8 +26,8 @@ const Globle_team = () => {
                 <div className={style.glob_card_box}>
                     <div className={`${style.globle_cards} row gap-3`}>
                         {
-                            g_card.map((item) => (
-                                <Glob_card img={item.img} member_name={item.member_name} post={item.post} disc={item.disc} />
+                            g_card.map((item, i) => (
+                                <Glob_card img={item.img} key={i} member_name={item.member_name} post={item.post} disc={item.disc} />
                             ))
                         }
                     </div>

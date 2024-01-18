@@ -19,7 +19,7 @@ const Our_blog = () => {
                 <div className={`d-flex gap-3 ${style.blog}`}>
                     {
                         blog_card.map((item, i) => (
-                            <Blog_data index={item.index} title={item.title} disc={item.disc} isClass={i === 1}/>
+                            <Blog_data index={item.index} key={i} title={item.title} disc={item.disc} isClass={i === 1}/>
                         ))
                     }
                 </div>

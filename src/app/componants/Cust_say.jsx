@@ -23,8 +23,8 @@ const Cust_say = () => {
             </p>
             <div className='d-flex gap-3'>
                 {
-                    c_card.map((item) => (
-                        <Testimonials img={item.img} disc={item.disc} name={item.name} post={item.post}/>
+                    c_card.map((item, i) => (
+                        <Testimonials img={item.img} key={i} disc={item.disc} name={item.name} post={item.post}/>
                     ))
                 }
             </div>

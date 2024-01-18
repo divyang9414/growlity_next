@@ -24,8 +24,8 @@ const Our_services = () => {
                 </div>
                 <p className={`${style.our_services_disc} text-center`}>Our multidisciplinary teams can help companies understand the risks and opportunities arising from climate change and materiality issues to achieve growth wi th sustainability.</p>
                 <div className="d-flex gap-3">{
-                        s_card.map((item) => (
-                            <Service_card img={item.img} title={item.title} disc={item.disc} />
+                        s_card.map((item, i) => (
+                            <Service_card img={item.img} key={i} title={item.title} disc={item.disc} />
                         ))
                     }
                 </div>

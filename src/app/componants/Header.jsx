@@ -26,8 +26,8 @@ const Header = () => {
                     </div>
                     <ul className={`${style.nav_list}`}>
                         {
-                            nav_list.map((item) => (
-                                <Header_nav_list isActive={pathname === item.link} link={item.link} title={item.title} />
+                            nav_list.map((item, i) => (
+                                <Header_nav_list isActive={pathname === item.link} link={item.link} key={i} title={item.title} />
                             ))
                         }
                     </ul>

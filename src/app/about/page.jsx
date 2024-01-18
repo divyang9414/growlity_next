@@ -25,8 +25,8 @@ const page = () => {
             <About />
             <section className='container'>
                 <div className={`d-flex justify-content-center gap-3`} style={{ margin: '0 10rem' }}>{
-                    s_card.map((item) => (
-                        <Service_card img={item.img} title={item.title} disc={item.disc} />
+                    s_card.map((item, i) => (
+                        <Service_card img={item.img} key={i} title={item.title} disc={item.disc} />
                     ))
                 }
                 </div>

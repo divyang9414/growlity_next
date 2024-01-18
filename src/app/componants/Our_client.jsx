@@ -28,8 +28,8 @@ const Our_client = () => {
                 </div>
                 <Link href={"/"} className={`d-flex gap-3`}>
                     {
-                        c_links.map((item) => (
-                            <Client_link img={item.img}/>
+                        c_links.map((item, i) => (
+                            <Client_link img={item.img} key={i}/>
                         ))
                     }
                 </Link>
