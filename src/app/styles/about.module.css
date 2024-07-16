@@ -5,6 +5,7 @@
 }
 .abt_data{
     position: relative;
+    background-color: aquamarine;
 }
 .about_disc {
     color: #727272;
@@ -18,3 +19,4 @@
     position: absolute;
     left: 30%;
 }
+

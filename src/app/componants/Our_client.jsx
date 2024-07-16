@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '../styles/our_client.module.css'
+import s from '../styles/our_client.module.css'
 import Section_title_img from './Section_title_img'
 import Client_link from './Client_link'
 import client_1 from '../../../public/client_1.png'
@@ -21,9 +21,9 @@ const c_links = [
 
 const Our_client = () => {
     return (
-        <section className={style.our_client}>
+        <section className={s.our_client}>
             <div className="container">
-                <div className={`text-center ${style.our_client_head}`}>
+                <div className={`text-center ${s.our_client_head}`}>
                     {<Section_title_img title={"Our Clients"}/>}
                 </div>
                 <Link href={"/"} className={`d-flex gap-3`}>
